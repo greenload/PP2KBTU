@@ -3,9 +3,14 @@
 #printString: to print the string in upper case.
 
 class Stringer:
-    def __init__(self):
-        pass
+
     def getString(self):
-        
+        self.phrase = input()
+
     def printString(self):
-        
+        print(self.phrase)
+
+str = Stringer()
+   
+str.getString()
+str.printString()
