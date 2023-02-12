@@ -8,7 +8,7 @@ class Stringer:
         self.phrase = input()
 
     def printString(self):
-        print(self.phrase)
+        print(self.phrase.upper())
 
 str = Stringer()
    

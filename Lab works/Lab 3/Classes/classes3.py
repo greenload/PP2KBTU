@@ -1,4 +1,4 @@
-#Write the definition of a Point class. Objects from this class should have a
+#Write the definition of a Point class. Objects from this class should have:
 #a method show to display the coordinates of the point
 #a method move to change these coordinates
 #a method dist that computes the distance between 2 points
@@ -44,8 +44,11 @@ class Point():
         del(self.pointsVer[:])
         print("All points were deleted\n")
 
+
+#Creating an object from the Point() class
 point = Point()
 
+#Executing all methods in a meaningfull order
 point.add()
 print(point.show())
 
