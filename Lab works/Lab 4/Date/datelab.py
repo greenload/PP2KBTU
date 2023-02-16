@@ -1,16 +1,16 @@
-import datetime
+import datetime as dt
 
 #Write a Python program to subtract five days from current date.
 def minus_five():
-    today = datetime.date.today()
-    deltaFive = datetime.timedelta(days=5)
+    today = dt.date.today()
+    deltaFive = dt.timedelta(days=5)
     fiveDaysBefore = today - deltaFive
     return fiveDaysBefore
 
 #Write a Python program to print yesterday, today, tomorrow.
 def yetoto():
-    today = datetime.date.today()
-    deltaOne =  datetime.timedelta(days=1)
+    today = dt.date.today()
+    deltaOne =  dt.timedelta(days=1)
     yesterday = today - deltaOne
     tomorrow = today + deltaOne
 
@@ -18,10 +18,10 @@ def yetoto():
     
 #Write a Python program to drop microseconds from datetime.
 def mic_drop():
-    notPrecizedTime = datetime.datetime.now().replace(microsecond=0)
+    notPrecizedTime = dt.datetime.now().replace(microsecond=0)
     return notPrecizedTime
     
 #Write a Python program to calculate two date difference in seconds.
 def two_diff(firstDate, secondDate):
-    dateDifference = firstDate - secondDate
+    dateDifference = dt.timedelta.total_seconds(firstDate - secondDate)
     return dateDifference
