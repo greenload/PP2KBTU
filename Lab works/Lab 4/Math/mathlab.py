@@ -19,7 +19,7 @@ def polygon_area(sideQuantity: int, sideLength: int):
     perimeter = sideQuantity * sideLength
     apothem = sideLength / 2 * math.tan(math.radians(180)/sideQuantity)
     area = (perimeter * apothem)/2
-    return area
+    return math.ceil(area)
 
 #Write a Python program to calculate the area of a parallelogram.
 def parallelogram_area(baseLength: float, height: float):
