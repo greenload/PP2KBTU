@@ -1,3 +1,4 @@
+import math
 #A recipe you are reading states how many grams you need for the ingredient. Unfortunately, your store only sells items in ounces.
 #Create a function to convert grams to ounces. ounces = 28.3495231 * grams
 
@@ -17,12 +18,30 @@ def far_to_cels(far):
 #Write a program to solve a classic puzzle: We count 35 heads and 94 legs among the chickens and rabbits in a farm.
 #How many rabbits and how many chickens do we have? create function: solve(numheads, numlegs):
 
-
+def solve(numheads: int, numlegs: int):
+    
+    if numlegs < numheads * 2:
+        print("It should be enough legs at least for chicks.")
+        return False, False
+    elif  numlegs % 2 != 0:
+        print("Quantity of legs should be even.")
+        return False, False
+    elif numlegs > numheads * 4:
+        print(f"It should be not more then {numheads*4} legs for {numheads} heads.")
+        return False, False
+    else:
+        rabbits = (numlegs - (numheads * 2)) / 2
+        chicks = numheads - rabbits
+    return rabbits, chicks
 
 #You are given list of numbers separated by spaces.
 #Write a function filter_prime which will take list of numbers as an agrument and returns only prime numbers from the list.
 
+def filter_prime():
 
+
+
+    return primes
 
 #Write a function that accepts string from user and print all permutations of that string.
 
@@ -55,7 +74,11 @@ spy_game([1,7,2,0,4,5,0]) --> False
 
 #Write a function that computes the volume of a sphere given its radius.
 
+def volume(radius: int):
 
+    volume = 4/3 * math.pi() * radius**3
+
+    return volume
 
 #Write a Python function that takes a list and returns a new list with unique elements of the first list.
 #Note: don't use collection set.
