@@ -119,4 +119,6 @@ Good job, KBTU! You guessed my number in 3 guesses!
 
 
 #Create a python file and import some of the functions from the above 13 tasks and try to use them.
-
+"""
+I created several files for different functions, working as mini programs. All of them are in this directory
+"""
